@@ -1,11 +1,10 @@
 
 import React from 'react';
-import { STATS } from '../constants';
+import { STATS } from '../constants.tsx';
 
 const Hero: React.FC = () => {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start py-12">
-      {/* Bio Column */}
       <div className="lg:col-span-3 space-y-12">
         <div>
           <h3 className="text-[10px] font-bold tracking-[0.3em] text-gray-400 mb-6">BIOGRAPHY</h3>
@@ -29,10 +28,8 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Image Column */}
       <div className="lg:col-span-6 relative flex justify-center">
         <div className="relative w-full max-w-[500px] aspect-[4/5]">
-          {/* Decorative Waves */}
           <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 opacity-20 pointer-events-none">
              <svg width="100" height="200" viewBox="0 0 100 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 10C25 10 25 30 50 30S75 10 100 10" stroke="black" strokeWidth="2"/>
@@ -50,7 +47,6 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Stats Column */}
       <div className="lg:col-span-3 h-full flex flex-col justify-center items-end text-right space-y-12">
         {STATS.map((stat, i) => (
           <div key={i}>

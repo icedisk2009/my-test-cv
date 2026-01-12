@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { ProjectItem } from '../types';
+import { ProjectItem } from '../types.ts';
 
 interface ProjectModalProps {
   project: ProjectItem | null;
@@ -27,7 +27,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
       />
       
       <div className="relative w-full max-w-6xl bg-white max-h-[90vh] overflow-y-auto rounded-sm shadow-2xl flex flex-col md:flex-row">
-        {/* Close Button */}
         <button 
           onClick={onClose}
           className="absolute top-6 right-6 z-10 w-10 h-10 border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all group"
@@ -38,7 +37,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           </svg>
         </button>
 
-        {/* Image Area */}
         <div className="md:w-3/5 bg-gray-100 min-h-[400px]">
           <img 
             src={project.imageUrl} 
@@ -47,7 +45,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
           />
         </div>
 
-        {/* Content Area */}
         <div className="md:w-2/5 p-8 md:p-12 lg:p-16 flex flex-col justify-between bg-white">
           <div>
             <p className="text-[10px] font-bold tracking-[0.3em] text-gray-400 mb-4">{project.category.toUpperCase()}</p>

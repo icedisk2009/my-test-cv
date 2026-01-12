@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExperienceItem, ProjectItem, StatItem } from './types';
+import { ExperienceItem, ProjectItem, StatItem } from './types.ts';
 
 export const NAV_LINKS = [
   { label: 'HOME', href: '#' },

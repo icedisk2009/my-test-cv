@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { PROJECTS } from '../constants';
-import { ProjectItem } from '../types';
+import { PROJECTS } from '../constants.tsx';
+import { ProjectItem } from '../types.ts';
 
 interface ProjectsSectionProps {
   onProjectClick: (project: ProjectItem) => void;
